@@ -1,0 +1,37 @@
+<div id="container">
+    <img class="portfolio" id="portfolio" src="/img/portfolio1.png">
+    <img class="portfolio" id="portfolio" src="/img/portfolio2.png">
+    <img class="portfolio" id="portfolio" src="/img/portfolio4.png">
+    <img class="portfolio" id="portfolio" src="/img/portfolio3.png">
+</div>
+
+<div id="commentbox">
+<h2>Leave a comment: </h2>
+{{#if error_msg}}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{error_msg}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+{{/if}}   
+</div> 
+<form action="" method="POST">
+    <div class="form-group">
+        <textarea class="form-control" name="comment" id="comment" placeholder="Write a comment!" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark btn-block">Submit</button>
+</form>
+
+
+<div id="comments">
+<h2>Comments: </h2>
+{{#each comment}}
+<li id="listcomments">
+{{comment}} 
+<br>by {{name}} at {{date}}</br>
+</li>
+{{/each}}
+</div>
+
+

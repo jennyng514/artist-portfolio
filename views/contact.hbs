@@ -1,0 +1,69 @@
+<h1>Contact Me </h1>
+<ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+    <a class="btn-floating btn-fb mx-1" href="https://github.com/jennyng514">
+        <i class="fab fa-github fa-2x"> </i>
+    </a>
+    </li>
+    <li class="list-inline-item">
+    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/">
+        <i class="fab fa-twitter fa-2x"> </i>
+    </a>
+    </li>
+    <li class="list-inline-item">
+    <a class="btn-floating btn-gplus mx-1" href="https://www.instagram.com/">
+        <i class="fab fa-instagram fa-2x"> </i>
+    </a>
+    </li>
+    <li class="list-inline-item">
+    <a class="btn-floating btn-gplus mx-1" href="https://www.youtube.com/">
+        <i class="fab fa-youtube fa-2x"> </i>
+    </a>
+    </li>	 	  
+    <li class="list-inline-item">
+    <a class="btn-floating btn-gplus mx-1" href="https://www.pinterest.com/">
+        <i class="fab fa-pinterest fa-2x"> </i>
+    </a>
+    </li>	  
+</ul>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+    <h1 class="text-center mb-3">Send a message: </h1>
+    {{#if success_msg}}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{success_msg}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    {{/if}}
+    {{#if error_msg}}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{error_msg}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    {{/if}}
+    <form action="" method="POST">
+        <div class="form-group">
+          <label for="email">Subject: </label>
+          <input
+            type="subject"
+            id="subject"
+            name="subject"
+            class="form-control"
+            placeholder="Enter Subject"
+          />
+        </div>
+        <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea class="form-control" name="message" id="message" placeholder="Enter Message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+    </div>
+  </div>
+</div>
+

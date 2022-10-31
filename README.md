@@ -54,8 +54,6 @@ An Example Message:
 }
 ```
 
-## [Link to Commented First Draft Schema](db.js) 
-
 ## Wireframes
 
 / - home page that has a slideshow cycling through artwork
@@ -92,18 +90,6 @@ An Example Message:
 2. as a user, I can view and comment on artwork
 3. as a user, I can fill out the commission and contact forms
 
-## Research Topics
-
-* (6 points) Integrate user authentication
-    * I'm going to be using passport for user authentication
-    * Only one user is allowed
-* (2 points) CSS Framework
-    * I'm going to be using Bootstrap as a CSS Framework
-
-8 points total out of 8 required points 
-
-
-## [Link to Initial Main Project File](app.js) 
 
 ## Annotations / References Used
 
